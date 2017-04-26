@@ -1,3 +1,4 @@
+
 /**************************
 
 ******** portfolio CSS ****
@@ -46,6 +47,7 @@ header {
 }
 
 .logo h3 {
+    padding-top: 20px;
     font-size: 4em;
     color: #fff;
 }
@@ -69,17 +71,23 @@ header {
     float: left;
     padding-left: 20px
 }
+.adddisc h5 {text-align: center;}
 h1 {
     font-size: 30px;
+
 }
 .nav li a {
+        padding-bottom: 5px;
     color: #fff;
     font-size: 18px
+}
+.nav li a:hover {
+    border-bottom: 1px  dashed
 }
 
 .nav li:hover a {
     color: #ccc;
-    text-decoration: underline;
+
     padding-bottom: 10px
 }
 
@@ -96,15 +104,27 @@ h1 {
     font-size: 4em;
     margin-top: 20px;
     width: 100%
-}
+}rightalgin h3 {color: #333}
 
 .adddisc a {
+    cursor: pointer;
     color: #fff;
+    transform: translateZ(0);
 }
+
+.rightalgin h3 {color: #333}
 
 .adddisc a:hover {
     color: #ccc;
-    text-decoration: none
+    text-decoration: none;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    
+    animation-duration: .3s, 1.5s;
+    animation-direction: normal, alternate;
+    transform: translateZ(0);
+    animation-name: hvr-icon-hang-sink, hvr-icon-hang;
 }
 
 .adddisc p h5 {
@@ -244,7 +264,6 @@ footer i:hover {
     position: fixed;
     z-index: 99;
     width: 100%;
-        background-color: rgba(0,0,0,0.2);
 }
 
 #about img {
