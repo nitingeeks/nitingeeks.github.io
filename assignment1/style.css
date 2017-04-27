@@ -194,7 +194,6 @@ color: #333;
 .single_desgin span {
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
     float: left;
     width: 100%;
     min-height: 30px;
@@ -284,14 +283,46 @@ footer i:hover {
 }
 
 #about img {
+    border: 1px dashed #fff;
+    padding: 4px;
     cursor: pointer;
     border-radius: 50%;
- -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 #about img:hover{
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+#about h3 {
+    font-size: 27px;
+    margin: 30px 0 10px 0;
+}
+#contact {position: relative;}
+.newsletter {
+    float: left;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 40px 0 0;
+    min-height: 360px;
+    background-color: rgba(255,255,255,.6);
+    text-align: center;
+    color: #333;
+}
+.newsletter  form {
+    margin:100px 0;
+}
+.newsletter  form input {
+    padding: 15px 10px;
+}
+.mailalgin {
+        min-width: 300px;
+}
+.submit {
+        margin-left: -4px;
+        cursor: pointer;
+}
+.newsletter  form input:focus,.newsletter  form input:hover {outline: none;}
