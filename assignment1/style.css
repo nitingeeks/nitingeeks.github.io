@@ -58,6 +58,7 @@ header {
     padding-top: 20px;
     font-size: 4em;
     color: #fff;
+    cursor: pointer;
 }
 
 .logo h3 span {
