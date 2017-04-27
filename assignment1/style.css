@@ -53,6 +53,10 @@ header {
 .logo {
     float: left;
 }
+header section {
+        padding: 0 !important;
+    float: none;
+}
 
 .logo h3 {
     padding-top: 20px;
