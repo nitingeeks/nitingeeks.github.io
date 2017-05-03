@@ -28,6 +28,8 @@ nav {
 	color: #fff;
 	background-color: transparent;
 	padding: 15px 30px;
+	
+    border-radius: 0px;
 }
 .top-nav li.active a{
 	color: #fff;
@@ -35,14 +37,47 @@ nav {
 	background-color: transparent;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .nav>li>a:focus, .nav>li>a:hover {
-	border-radius: 0;
 	background-color: #ccc;
-	color: #000;
 }
 .serach-algin {
 	text-align: right;
 	
 }
+
+.breadcrumb-algin {
+	background-color: #f5f5f5;
+}
+.breadcrumb-algin .breadcrumb{padding-bottom: 8px;
+    margin-bottom: 0px;
+}
+
+.tab-content-algin {
+	background-color: #2cde80;
+	padding: 60px 0;
+	float: left;
+    width: 100%;
+    color: #fff;
+    margin-top: -1px;
+	border-radius: 0 0 10px 10px;
+}
+.sign-in {
+	background-color: #1ea95f;
+    border-color: #1d7b49;
+    font-weight: 800;
+    padding: 8px 30px;
+    opacity: .9;
+}
+.sign-in:hover {
+	opacity: 1;
+	background-color: #1ea95f;
+    border-color: #1d7b49;
+    font-weight: 800;
+    padding: 8px 30px;
+}
+
+
+
+
 
 
 
@@ -52,7 +87,6 @@ nav {
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -95,8 +129,7 @@ text-align: center;
 /******* Services **********/
 .service {
     padding: 60px 0;
-    border-top: 1px solid #ccc;
-    background: #ccc;
+    background: #e2fff0;
 }
 
 .service h2 {
@@ -123,12 +156,105 @@ text-align: center;
     margin-bottom: 60px;
 }
 
+/****** Footer *******/
+footer {
+	background-color: #2c2c2c;
+	padding: 30px 0 0
+}
+footer h2 {
+	color: #fff
+}
+
+.foot-bootom {
+	color: #fff;
+	font-size: 10px
+
+}
+.foot-bootom ul {float: right; }
+.foot-bootom  li a {color: #fff}
+.foot-bootom  li {list-style: none;
+	padding: 0 20px;
+	text-align: right;	
+	float: left;
+	border-right: 1px dashed #5e5e5e;
+}
+.foot-bootom  li:last-child {
+	padding-right: 0px;
+	border-right:none;
+}
+
+/********** Contact US ************/
+
+.conatact {
+	padding-top: 60px;
+    padding-bottom: 60px;
+}
+.conatact h2 {
+    margin-bottom: 30px;
+}
+.nav-tabs {
+	background: #0cf77b;
+    border-radius: 10px 10px 0 0px;
+    overflow: hidden;
+    border: none}
+
+.nav-tabs li a {
+	font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    border: none
+
+}
+.nav-tabs>li>a:hover, .nav-tabs>li>a:active {
+	background: transparent;border: none;box-shadow: none;border-color: transparent;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	background: transparent;
+	border: 0px;
+	color: #fff;
+}
+.nav-tabs>li.active, .nav-tabs>li.active:focus, .nav-tabs>li.active:hover {
+	background: #2cde80;
+   
+}
+
+
+
+/******** Accordion Section ***************/
+.accordion {
+	padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.accordion h2 {
+	padding-bottom: 30px
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /************* Media Queries ***************/
 
 @media only screen and (max-width: 992px) {
 	.serach-algin  input{width: 100% !important}
 	.top-nav li a {padding: 15px 18px}
+	.foot-bootom {text-align: center;}
+	.foot-bootom ul {    float: none;    margin: 0 auto;    display: table;}
+	.foot-bootom  li:first-child {padding-left: 0px}
 }
 @media only screen and (max-width: 768px) {
 	.navbar-toggle {margin-top: -26px; }
@@ -138,6 +264,13 @@ text-align: center;
 	#navbar {margin-top: 20px;}
 	#navbar li:last-child {border-bottom: 1px dashed transparent}
 	.top-nav li.active a{ background-color: transparent;color: #fff}
+
+}
+@media only screen and (max-width: 560px) {
+	.foot-bootom  li {width: 100%;}
+	.foot-bootom  li {border-bottom: 1px dashed #ccc; padding: 0 }
+	.foot-bootom ul {}
+	.foot-bootom  li:last-child {border-bottom: 1px dashed transparent}
 }
 
 
