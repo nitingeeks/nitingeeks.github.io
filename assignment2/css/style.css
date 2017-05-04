@@ -257,7 +257,7 @@ footer h2 {
 	.foot-bootom  li:first-child {padding-left: 0px}
 	.carousel, .carousel .item , .carousel-inner > .item > img {height: 400px}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.navbar-toggle {margin-top: -26px; }
 	.logo {text-align: center;}
 	.navbar-toggle .icon-bar {background-color: #fff}
@@ -270,7 +270,7 @@ footer h2 {
 }
 @media only screen and (max-width: 560px) {
 	.foot-bootom  li {width: 100%;}
-	.foot-bootom  li {border-bottom: 1px dashed #ccc; padding: 0; text-align: center;}
+	.foot-bootom  li {border-bottom: 1px dashed #ccc; padding: 0; text-align: center;padding: 10px 0;border-right: 0px;}
 	.foot-bootom ul {width: 100%;
     text-align: center;
     padding: 0 !important;
